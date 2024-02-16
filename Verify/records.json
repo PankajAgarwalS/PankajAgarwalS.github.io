@@ -1,14 +1,12 @@
 [
   {
-    "registrationNumber": "ABC123",
-    "name": "John Doe",
-    "age": 25,
-    "email": "john@example.com"
+    "RegistrationNumber": "E20240156",
+    "Name": "Pankaj Agarwal",
+    "Domain": "Web Development",
   },
   {
-    "registrationNumber": "XYZ789",
-    "name": "Jane Smith",
-    "age": 30,
-    "email": "jane@example.com"
+    "RegistrationNumber": "E20240157",
+    "name": "Prajwal Kadam",
+    "Domain": "Web Development",
   }
 ]
