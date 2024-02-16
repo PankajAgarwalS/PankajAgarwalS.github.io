@@ -7,17 +7,17 @@ function verifyRecord() {
         .then(response => response.json())
         .then(data => {
             // Filter the records based on the entered registration number
-            var filteredRecords = data.filter(record => record.registrationNumber === registrationNumber);
+            var filteredRecords = data.filter(record => record.RegistrationNumber === registrationNumber);
             if (filteredRecords.length > 0) {
                 // If records are found, display them
                 var resultDiv = document.getElementById('verificationResult');
                 resultDiv.innerHTML = '<strong>Records found:</strong><br>';
                 filteredRecords.forEach(record => {
                     var recordDiv = document.createElement('div');
-                    recordDiv.innerHTML = `<strong>Registration Number:</strong> ${record.registrationNumber}<br>
-                                           <strong>Name:</strong> ${record.name}<br>
-                                           <strong>Age:</strong> ${record.age}<br>
-                                           <strong>Email:</strong> ${record.email}<br><br>`;
+                    recordDiv.innerHTML = `<strong>Registration Number:</strong> ${record.RegistrationNumber}<br>
+                                           <strong>Name:</strong> ${record.Name}<br>
+                                           <strong>Domain:</strong> ${record.domain}<br>
+                                           `;
                     resultDiv.appendChild(recordDiv);
                 });
             } else {
