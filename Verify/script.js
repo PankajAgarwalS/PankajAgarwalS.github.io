@@ -16,7 +16,7 @@ function verifyRecord() {
                     var recordDiv = document.createElement('div');
                     recordDiv.innerHTML = `<strong>Registration Number:</strong> ${record.RegistrationNumber}<br>
                                            <strong>Name:</strong> ${record.Name}<br>
-                                           <strong>Domain:</strong> ${record.domain}<br>
+                                           <strong>Domain:</strong> ${record.Domain}<br>
                                            `;
                     resultDiv.appendChild(recordDiv);
                 });
